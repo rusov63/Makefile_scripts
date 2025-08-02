@@ -1,7 +1,7 @@
 # Шаблон проекта Telegram-бота на aiogram.
 
 # Параметры для виртуального окружения
-VENV_NAME=.venv
+VENV_NAME=venv
 PYTHON=python3.12
 PIP=$(VENV_NAME)/bin/pip
 
@@ -54,4 +54,4 @@ fill_file:
 
 	@echo "Файлы заполнены. Ошибок нет"
 
-	@echo "import os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nclass Config:\n    def __init__(self):\n        self.bot_token = os.getenv('BOT_TOKEN')\n        self.admin_id = os.getenv('ADMIN_ID')\n" > config.py
+	#@echo "import os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nclass Config:\n    def __init__(self):\n        self.bot_token = os.getenv('BOT_TOKEN')\n        self.admin_id = os.getenv('ADMIN_ID')\n" > config.py
